@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-k6RqeWeci5ZR/Lv4MR0sA0FfDOM7Pl2Y+KKZL8l+XnLDF4P/8tmLbFO8J8i6Hik0P+N3z1H7NAHQZtn1OaB5cw==" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/nn.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Sabiha</span><br>Sahera From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Dynamic and results-oriented computer science student with a foundation in C, C++, Python, Java, and various web development languages. Possessing a keen interest in cybersecurity, I am dedicated to safeguarding digital assets and creating secure systems. With a solid understanding of both backend and frontend technologies, I excel in full-stack development, adeptly crafting robust and user-friendly applications. My experience includes hands-on projects in web development, where I've honed my skills in HTML, CSS, JavaScript, and frameworks like Spring Boot and Swing. Additionally, my coursework and extracurricular activities have equipped me with a comprehensive understanding of cybersecurity principles and practices. Known for my problem-solving abilities and attention to detail, I thrive in collaborative environments where I can contribute my expertise to develop innovative solutions to real-world challenges. Eager to further explore the intersection of web development and cybersecurity, I am committed to continuous learning and staying abreast of emerging technologies in both fields.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>HTML
+                            CSS,
+                            JavaScript,
+                            C,
+                            C++,
+                            Java,
+                            Advanced Java,
+                            MySQL</li>
+                        <li><span>Concepts</span><br>Object-Oriented Programming (OOP),
+                            Data Structures,
+                            Computer Networks,
+                            Cybersecurity Fundamentals,
+                            Algorithms</li>
+                            <li><span>Tools and Technologies</span><br>Version Control (e.g., Git)..
+                                Integrated Development Environments (IDEs) like IntelliJ, Eclipse, VSCode ..
+                                Database Management Systems (e.g., MySQL)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Apr 2024 - May 2024</span><br>Web Developer intern at Internpedia</li>
+                        <li><span>June 2024 - July 2024</span><br>Web Developer intern at ShadowFox</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025</span><br>BTech from Alliance University, Bengaluru</li>
+                        <li><span>2020</span><br>12th from Sri chaiatanya Institutions, Guntur</li>
+                        <li><span>2018</span><br>10th from Narayana e-techno schools, Guntakal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Front-end Development (HTML, CSS, JavaScript) and
+                    Back-end Development (Java, MySQL)</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Software Development</h2>
+                <p>Application Development (Java, C++, C) and
+                    Data Structures and Algorithms Implementation</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Database Management</h2>
+                <p>Database Design and
+                    SQL Query Optimization</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Cybersecurity</h2>
+                <p>Basic Security Audits,
+                    Vulnerability Assessment,
+                    Implementation of Security Protocols and Best Practices</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Networking</h2>
+                <p>Network Configuration,
+                    Basic Troubleshooting,
+                    Understanding of Network Protocols</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Spring-boot Project</h3>
+                    <p>The app helps out everyone to share their secret thoughts and confessions without revealing their identity </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> sabiishaik26@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 7997746100</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <div id="msg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2024 Sabiha Sahera. All rights reserved.</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxHdGSvzyLlLUcRhO6WB5MT2gQolLo9qdXSFH-1ln3RJKHJ-ibNpcFjwkzV13KjY2wF0g/exec'
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById('msg');
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form), mode: 'no-cors' })
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(() => msg.innerHTML = '', 5000);
+            form.reset();
+        })
+        .catch(error => {
+            msg.innerHTML = "Failed to send message. Please try again.";
+            setTimeout(() => msg.innerHTML = '', 5000);
+        });
+});
+</script>
+</body>
+</html>
